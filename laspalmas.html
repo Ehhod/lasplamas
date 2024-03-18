@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Palmas</title>
+    <style>
+        /* Resetowanie marginesów dla wszystkich elementów */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, #080302, #754018);
+            color: white; /* Kolor tekstu */
+            text-align: center; /* Wycentrowanie treści wzdłuż osi poziomej */
+            min-height: 100vh; /* Ustawienie minimalnej wysokości na wysokość widoku (viewport) */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .laspalmas1 {
+            display: flex; /* Ustawienie kontenera na flexbox */
+            align-items: center; /* Wyśrodkowanie elementów wzdłuż osi pionowej */
+            justify-content: center; /* Wyśrodkowanie elementów wzdłuż osi poziomej */
+        }
+
+        .laspalmas1 img {margin-top: 7%;
+            width:700px;
+                         height:550px;
+
+        }
+
+        .naszemenu img {
+            margin: 10px; /* Dodatkowy margines dla obrazków w menu */
+            height: 150px; /* Stała wysokość obrazków w menu */
+            border-radius: 0%; /* Zaokrąglenie krawędzi do 50% */
+        }
+
+      
+
+        .footer {
+            position: fixed; /* Ustawienie na stałej pozycji */
+            bottom: 0; /* Przyklejenie do dolnej krawędzi */
+            background-color: rgb(60, 60, 60);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Szerokość stopki */
+            display: flex; /* Ustawienie kontenera na flexbox */
+            flex-wrap: wrap; /* Zawijanie elementów do nowej linii w razie potrzeby */
+            justify-content: space-around; /* Rozłożenie elementów równomiernie */
+        }
+
+        .footer-column {
+            flex: 1; /* Rozciągnięcie kolumny na całą dostępną przestrzeń */
+            text-align: center; /* Wyrównanie tekstu do środka */
+            margin: 10px; /* Margines zewnętrzny */
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px; /* Mniejszy margines dla linków */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="laspalmas1">
+        <img src="logo2.png"><br>
+        <p style="font-size: 40px;">
+        
+    </div><br><br>
+    <h1>Zobacz dania w naszym menu</h1>
+    <div class="naszemenu">
+        <img src="zapiekanka2.png" alt="Obraz 1">
+        <img src="burger2.png" alt="Obraz 2">
+        <img src="lod2.png" alt="Obraz 3">
+    </div>
+
+    <!-- Stopka -->
+    <div class="footer">
+        <div class="footer-column">
+            <h1>Znajdź nas na:</h1>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="footer-column">
+            <h1>Kontakt:</h1>
+            <p>Telefon: 123-456-789</p>
+            <p>Email: example@example.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
