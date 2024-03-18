@@ -13,49 +13,45 @@
         }
 
         body {
+            font-family: Arial, sans-serif; /* Ustawienie podstawowego rodzaju czcionki */
             background-image: linear-gradient(to bottom right, #080302, #754018);
             color: white; /* Kolor tekstu */
             text-align: center; /* Wycentrowanie treści wzdłuż osi poziomej */
             min-height: 100vh; /* Ustawienie minimalnej wysokości na wysokość widoku (viewport) */
             display: flex;
             flex-direction: column;
+            align-items: center; /* Wyśrodkowanie elementów wzdłuż osi poziomej */
         }
 
-        .laspalmas1 {
-            display: flex; /* Ustawienie kontenera na flexbox */
-            align-items: center; /* Wyśrodkowanie elementów wzdłuż osi pionowej */
-            justify-content: center; /* Wyśrodkowanie elementów wzdłuż osi poziomej */
+        .laspalmas1 img {
+            width: 70%; /* Ustawienie szerokości na 70% szerokości widoku */
+            max-width: 600px; /* Maksymalna szerokość obrazka */
+            margin-top: 20px; /* Dodatkowy margines na górę */
         }
 
-        .laspalmas1 img {margin-top: 7%;
-            width:700px;
-                         height:550px;
-
+        .naszemenu {
+            display: flex;
+            justify-content: space-around; /* Rozłożenie elementów równomiernie */
+            flex-wrap: wrap; /* Zawijanie elementów do nowej linii w razie potrzeby */
+            margin-top: 20px;
         }
 
         .naszemenu img {
+            width: 30%; /* Ustawienie szerokości na 30% szerokości widoku */
+            max-width: 200px; /* Maksymalna szerokość obrazka */
             margin: 10px; /* Dodatkowy margines dla obrazków w menu */
-            height: 150px; /* Stała wysokość obrazków w menu */
-            border-radius: 0%; /* Zaokrąglenie krawędzi do 50% */
         }
 
-      
-
         .footer {
-            position: fixed; /* Ustawienie na stałej pozycji */
-            bottom: 0; /* Przyklejenie do dolnej krawędzi */
             background-color: rgb(60, 60, 60);
             color: white;
             padding: 20px;
             text-align: center;
             width: 100%; /* Szerokość stopki */
-            display: flex; /* Ustawienie kontenera na flexbox */
-            flex-wrap: wrap; /* Zawijanie elementów do nowej linii w razie potrzeby */
-            justify-content: space-around; /* Rozłożenie elementów równomiernie */
+            margin-top: auto; /* Umieszczenie stopki na dole widoku */
         }
 
         .footer-column {
-            flex: 1; /* Rozciągnięcie kolumny na całą dostępną przestrzeń */
             text-align: center; /* Wyrównanie tekstu do środka */
             margin: 10px; /* Margines zewnętrzny */
         }
@@ -70,27 +66,25 @@
 
 <body>
     <div class="laspalmas1">
-        <img src="logo2.png"><br>
-        <p style="font-size: 40px;">
-        
-    </div><br><br>
+        <img src="logo2.png" alt="Logo Las Palmas">
+    </div>
     <h1>Zobacz dania w naszym menu</h1>
     <div class="naszemenu">
-        <img src="zapiekanka2.png" alt="Obraz 1">
-        <img src="burger2.png" alt="Obraz 2">
-        <img src="lod2.png" alt="Obraz 3">
+        <img src="zapiekanka2.png" alt="Zapiekanka">
+        <img src="burger2.png" alt="Burger">
+        <img src="lod2.png" alt="Lody">
     </div>
 
     <!-- Stopka -->
     <div class="footer">
         <div class="footer-column">
-            <h1>Znajdź nas na:</h1>
+            <h2>Znajdź nas na:</h2>
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
         <div class="footer-column">
-            <h1>Kontakt:</h1>
+            <h2>Kontakt:</h2>
             <p>Telefon: 123-456-789</p>
             <p>Email: example@example.com</p>
         </div>
